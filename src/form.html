@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { 
+    "title": "Связаться с нами"
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        <div class="box">
+            <div class="box-content">
+                <h1>Заполните форму</h1>
+                <form>
+                    <div class="personal">
+                        <div class="inf">
+                            <input type="text" name="name" id="yourname" class="inf-text-field-inp" required>
+                            <label for="yourname" class="inf-text-field-placeholder">Введите имя</label>
+                        </div>
+                        <div class="error"></div>
+                        <div class="inf">
+                            <input type="text" name="age" id="yourage" class="inf-text-field-inp" maxlength="3" required
+                            data-reg="^\d{1,3}$">
+                            <label for="yourage" class="inf-text-field-placeholder">Введите возраст</label>
+                        </div>
+                        <div class="error"></div>
+                        <div class="inf">
+                            <input type="text" name="email" id="youremail" class="inf-text-field-inp" required
+                            data-reg="^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$">
+                            <label for="youremail" class="inf-text-field-placeholder">Введите E-mail адрес</label>
+                        </div>
+                        <div class="error"></div>
+                        <div class="inf">
+                            <input type="tel" name="phone" id="yourphone" class="inf-text-field-inp" required
+                            data-reg="^(\+7|8)(\s9\d{2}\s\d{3}\s\d{2}\s\d{2}|9\d{9}|-9\d{2}-\d{3}-\d{2}-\d{2})$">
+                            <label for="phone" class="inf-text-field-placeholder">Введите номер телефона</label>
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                    <div class="additional">
+                        <div class="skills-travel">
+                            <select name="skill" id="sel">
+                                <option>Ваш опыт</option>
+                                <option value="Junior">Начинающий</option>
+                                <option value="Middle">Что то среднее</option>
+                                <option value="Senior">Опытный</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <div class="message">
+                            <label for="yourmes">Введите сообщение</label>
+                            <textarea name="mes" id="yourmes" rows="8"></textarea>
+                            <div class="error"></div>
+                        </div>
+                        <div class="confirmation">
+                            <input type="checkbox" value="Согласен" name="conf" id="yourconf">
+                            <label for="yourconf">Вы точно согласны отправить данные</label>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <p class="sub-p"><button type="submit" id="sub">Отправить</button></p>
+                </form>
+            </div>
+        </div>
+        @@include('html/scroll_to_top.html')
+        @@include('html/footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

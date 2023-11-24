@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { 
+    "title": "Галерея"
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        <h1 id="title-galery">Наша галерея</h1>
+        <div class="box-galery">
+            <div class="img">
+                <img src="@img/galery1.png" alt="Озеро и деревья" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery2.png" alt="Гора" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery3.png" alt="Речка и гора" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery4.png" alt="Хайкинг" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery5.png" alt="Хайкинг" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery6.png" alt="Рафтинг " class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery7.png" alt="Рафтинг, бурлящая вода" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery8.png" alt="Рафтинг, много опасных камней" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery9.png" alt="Кемпинг, семья рыбачит " class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery10.png" alt="Кемпинг, зелёная гора" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery11.png" alt="Кемпинг, высокая гора" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery12.png" alt="Кемпинг у озера" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery13.png" alt="Водопад" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery14.png" alt="Лес" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery15.png" alt="Зелёная поляна, вид на лес" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery16.png" alt="Тёмный, загадочный лес" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery17.png" alt="Звёздное небо" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery18.png" alt="Ночь, лес и звёздное небо" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery19.png" alt="Северное сияние, лес" class="box-galery-png">
+            </div>
+            <div class="img">
+                <img src="@img/galery20.png" alt="Северное сияние, берег моря" class="box-galery-png">
+            </div>
+        </div>
+        <div class="galery-background">
+            <button class="galery-close"></button>
+            <div class="box-galery-content">
+                <div class="btn-left"></div>
+                <div class="btn-right"></div>
+            </div>
+            <div class="btn-change">
+                <button class="previous"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+        @@include('html/scroll_to_top.html')
+        @@include('html/footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

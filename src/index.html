@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { 
+    "title": "Главная"
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        <div class="main-block">
+            @@include('html/service.html')
+            @@include('html/about.html')
+            <div class="third-block">
+                <div class="third-block-bacground-pic">
+                    <img src="@img/blog-bg.png" alt="водопад фон" class="third-block-pic">
+                </div>
+                <div class="third-block-background-mobile">
+                    <img src="@img/blog-mobile-bg.png" alt="водопад фон для мобильных телефонов" class="third-block-pic-mobile">
+                </div>
+                <div class="third-block-inf">
+                    <h1>Посмотри наше видео</h1>
+                    <p>Наш мир наполнен неописуемой красотой как рукотворной, так и природной. Сложно сказать, хватит ли одной жизни, чтобы повидать все земные чудеса. </p>
+                </div>
+                <button class="btn play-video"></button>
+                <div class="video-back">
+                    <button class="close-video">X</button>                    
+                    <div class="video-box">
+                        <video
+                        id="my-video"
+                        class="video-js video vjs-theme-forest"
+                        controls
+                        preload="auto"
+                        data-setup="{}" >
+                        <source src="/video/our-video.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-block">
+                <h1>Отзыв</h1>
+                <div class="feedback-slider-container">
+                    <div class="swiper feedback-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="box-left">
+                                <p>Спасибо ребятам за знакомство с новыми необычными местами и отличную логистику. Все маршруты, гостиницы, рестораны и "походные проживания на местности" подобраны идеально! Парни, вы молодцы, вы выбираете интересные маршруты и вам удаётся поддерживать удачный баланс между туризмом, фотографией и очень разумным ценником.</p>
+                            </div>                               
+                            <div class="box-right">
+                                <div class="pictures-customer">
+                                    <img src="@img/Alexander.png" alt="Аватарка Александра" class="icon-1">
+                                    <img src="@img/quick-icon.png" alt="Иконка" class="icon-2">
+                                </div>
+                                <div class="name-customer">
+                                    <h2>Александр Ефремов</h2>
+                                    <h4>ЗАКАЗЧИК</h4>
+                                </div> 
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="box-left">
+                                <p>Хочу выразить огромную благодарность! удностей и проблем в этой поездке в наше непростое время хватило с избытком, но ребята виртуозно "разруливали" их. Спасибо организаторам за незабываемые эмоции - как будет возможность обязательно с вами поеду еще куда-нибудь :)</p>
+                            </div>                              
+                            <div class="box-right">
+                                <div class="pictures-customer">
+                                    <img src="@img/Olga.png" alt="Аватарка Ольги" class="icon-1">
+                                    <img src="@img/quick-icon.png" alt="Иконка" class="icon-2">
+                                </div>
+                                <div class="name-customer">
+                                    <h2>Ольга Ларина</h2>
+                                    <h4>ЗАКАЗЧИК</h4>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="box-left">
+                                <p> Программа тура интересная и рассчитана на самый простой уровень физической подготовки, когда не надо таскать на длинные расстояния чемодан вещей, поскольку чемодан транспортируется на чудомашине - вахтовке. Хорошо построенный логичный маршрут, корректный тайминг, любовь к путешествиям, магическая способность сбора из разрозненной толпы организованной группы. Интересно было познакомиться с местным колоритом.</p>
+                            </div>                              
+                            <div class="box-right">
+                                <div class="pictures-customer">
+                                    <img src="@img/Anton.png" alt="Аватарка Антона" class="icon-1">
+                                    <img src="@img/quick-icon.png" alt="Иконка" class="icon-2">
+                                </div>
+                                <div class="name-customer">
+                                    <h2>Антон Батырев</h2>
+                                    <h4>ЗАКАЗЧИК</h4>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="fifth-block">
+                <div class="choose-us">
+                    <h1>Почему выбирают нас</h1>
+                    <p>Мы предлагаем путешествия на любой вкус и кошелёк. У нас продуманная и быстрая система бронирования. Куда бы вы не отправились, вас будут сопровождать наши лучшие гиды.</p>
+                    <div class="choose-us-hide">
+                        <p>У нас продуманная и быстрая система бронирования.</p>
+                        <p>Куда бы вы не отправились, вас будут сопровождать наши лучшие гиды.</p>
+                        <span class="btn-choose-hide">Скрыть</span>
+                    </div>
+                    <button class="btn choose-next">Читать дальше</button>
+                </div>
+            </div>
+            <div class="sixth-block">
+                <div class="sixth-block-inf">
+                    <h1>Давайте начнём разговор с нами</h1>
+                    <a href="https://vk.com/id573096812" class="inner-btn-get-proposal">Получить&nbsp;предложение</a>
+                </div>
+            </div>
+            @@include('html/scroll_to_top.html')
+            <div class="accordeon">
+                <div class="accordeon-content">
+                    <h1>Часто задаваемые вопросы</h1>
+                    <div class="acc-inf">
+                        <div class="accordeon-title">
+                            Как попасть в поход?
+                            <div class="circle">
+                                <div class="gorizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Для начала нужно определиться с маршрутом и датами. Выберите то, что заинтересует больше всего.</p>
+                            <p>Далее заполните форму на нашем сайте во вкладке 'Связаться с нами'. Также можно позвонить нам на горячую линию по номеру +7 917-610-97-99</p>
+                        </div>
+                    </div>
+                    <div class="acc-inf">
+                        <div class="accordeon-title">
+                            Что делать, если я опоздал к началу маршрута?
+                            <div class="circle">
+                                <div class="gorizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>В первую очередь сообщите об этом и координатору, и инструктору. Далее действуйте в соответствии с рекомендациям. Иногда есть возможность «догнать» группу, иногда — нет, это зависит от конкретного маршрута.</p>
+                            <p>Согласно договору оферты, в случае опоздания удерживается внесённая предоплата, но не отчаивайтесь. Каждый случай разбирается с координатором отдельно.</p>
+                        </div>
+                    </div>
+                    <div class="acc-inf">
+                        <div class="accordeon-title">
+                            Что делать, если мне нужно вернуться раньше или приехать позже?
+                            <div class="circle">
+                                <div class="gorizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Лучше всего обсудить этот вопрос с инструктором через координатора заранее, до бронирования места в походе. Большинство маршрутов завязаны на предоставляемый трансфер, а также нужно учитывать удалённость от населенных пунктов, трафик, местность, тип маршрута и т. д., так что уехать раньше или приехать позже вряд ли получится, либо придётся добираться за свой счёт.</p>
+                        </div>
+                    </div>
+                    <div class="acc-inf">
+                        <div class="accordeon-title">
+                            Можно ли идти в поход, если есть ограничения по состоянию здоровья, хронические заболевания, группа инвалидности?
+                            <div class="circle">
+                                <div class="gorizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Всё строго индивидуально, обязательно обсудите маршрут и нагрузку с лечащим врачом и согласуйте с инструктором. Походы — это активный отдых, поэтому сложные путешествия не всегда подойдут для тех, у кого есть заболевания опорно-двигательного аппарата, также не должно быть проблем со спиной, коленями, сердцем, дыханием.</p>
+                            <p>Рекомендуем трезво оценивать свои силы и согласовывать спорные моменты с координаторами. Ни в коем случае не скрывайте от координатора состояние здоровья, ведь именно это позволит сделать путешествие максимально комфортным и приятным.</p>
+                        </div>
+                    </div>
+                    <div class="acc-inf">
+                        <div class="accordeon-title">
+                            До какого возраста вы берёте в приключения?
+                            <div class="circle">
+                                <div class="gorizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Ограничения зависят от сложности маршрута, но бывают и другие факторы. Обязательно обсудите этот момент с координатором. В среднем верхняя граница для походников 60–70 лет, а дальше по согласованию с инструктором. Если вы бодры душой и телом, то для вас найдётся свой маршрут!</p>
+                        </div>
+                    </div>
+                    <div class="acc-inf">
+                        <div class="accordeon-title">
+                            А что с погодой в регионе, в который я лечу?
+                            <div class="circle">
+                                <div class="gorizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Мы рекомендуем самостоятельно мониторить прогноз погоды в регионе, где будет проходить маршрут. Самые точные данные обычно накануне — за два–три дня до начала.</p>
+                            <p>Погода очень непредсказуема! Бывает, что ничто не предвещает дождь и холод, — ни прогноз, ни походные приметы, а он всё равно начинает внезапно лить. Так что тёплая одежда и дождевик никогда не будут лишними. Ориентируйтесь на список снаряжения.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            @@include('html/footer.html')
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

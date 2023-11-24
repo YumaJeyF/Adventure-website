@@ -1,0 +1,249 @@
+/* Button scroll to top */
+
+.scroll-to-top-box {
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    background: none;
+    display: none;
+    z-index: 2;
+}
+
+.scroll-to-top-box.active {
+    display: block;
+}
+
+.scroll-top {
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+    background-color: #f1dddd;
+    border: none;
+    border-radius: 100%;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.scroll-top:hover {
+    background-color: #bba5a5;
+}
+
+@media (max-width: 768px) {
+    .scroll-top {
+        height: 60px;
+        width: 60px;
+        font-size: 35px;
+    }
+    .scroll-to-top-box {
+        right: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-to-top-box {
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .scroll-top {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+    }
+}
+
+/* Style for footer */
+
+.back-mobile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: none;
+}
+
+.back-pc {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.foot  {
+    position: relative;
+}
+
+.main-foot-inf {
+    width: 45em;
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    text-align: center;
+}
+
+.copyright {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 17px;
+    background-color: rgb(70, 60, 60);
+}
+
+.copyright p {
+    text-align: center;
+}
+
+.main-foot-inf .em {
+    border: none;
+    font-size: 17px;
+    background: none;
+    padding: 5px 10px;
+    width: 50%;
+}
+
+.search-bar {
+    background-color: #fff;
+    width: 100%;
+}
+
+.search-bar.error {
+    background-color: #f0c7c7;
+}
+
+.search-bar .sub {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 19px;
+}
+
+.btn-sub {
+    border: none;
+    background: none;
+}
+
+.btn-sub.block {
+    pointer-events: none;
+    color: #999;
+    cursor: default;
+}
+
+.search-bar {
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.main-foot-inf .em:focus {
+    outline: none;
+}
+
+.call-me {
+    margin-top: 50px;
+}
+
+.call-me p,
+.my-email p {
+    font-size: 17px;
+}
+
+.my-soc-net {
+    display: flex;
+    justify-content: center;
+}
+
+.my-soc-net img {
+    margin-right: 8px;
+}
+
+.my-soc-net:last-child {
+    margin-right: 0;
+}
+
+.main-foot-inf .btn {
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    margin: 22px auto;
+    display: none;
+}
+
+.main-foot-inf .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 1600px) {
+    .main-foot-inf {
+        transform: translate(-50%, -18%);
+    }   
+}
+
+@media (max-width: 1370px) {
+    .search-bar {
+        padding: 15px;
+    }
+    .call-me {
+        margin-top: 20px;
+    }
+    .main-foot-inf {
+        transform: translate(-50%, -23%);
+    }
+}
+
+@media (max-width: 1210px) {
+    .back-pc {
+        width: 150%;
+    }
+}
+
+@media (max-width: 814px) {
+    .back-pc {
+        width: 160%;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-pc {
+        display: none;
+    }
+    .back-mobile {
+        display: block;
+        height: 500px;
+    }
+    .main-foot-inf {
+        transform: translate(-50%, -60%);
+    }
+}
+
+@media (max-width: 576px) {
+    .search-bar .sub {
+        display: none;
+    }
+    .main-foot-inf .btn {
+        display: block;
+    }
+    .main-foot-inf {
+        transform: translate(-50%, -55%);
+        width: 40em;
+    }
+}
+
+@media (max-width: 390px) {
+    .main-foot-inf {
+        width: 35em;
+    }
+    .main-foot-inf .em {
+        padding: 0;
+        font-size: 16px;
+    }
+}

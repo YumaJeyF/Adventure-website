@@ -1,0 +1,331 @@
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.container.active {
+    position: fixed;
+    right: 15px;
+}
+
+/* Навигационное меню */
+
+.navigator {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigator a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
+
+.navigator li {
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.navigator li:hover {
+    background-color:#540099;
+}
+
+.navigator li:last-child {
+    margin-right: 0;
+}
+
+.nav {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    top: 6em;
+    width: 100%;
+}
+
+.nav.top-menu {
+    position: fixed;
+    top: 5px;
+}
+
+/* Бургер меню для мобилок */
+
+.nav-burger-box {
+    background-color: rgba(0, 0, 0, 0.308);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.nav-burger-box.open {
+    display: block;
+}
+
+.nav-burger-box-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(104, 99, 90);
+    padding-left: 20px;
+    padding-top: 35px;
+    min-width: 25%;
+    height: 100%;
+} 
+
+.nav-burger-box.open {
+    display: block;
+}
+
+.burger-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.burger-menu li {
+    font-size: 18px;
+}
+
+.burger-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.burger-menu a:hover {
+    background-color: black;
+}
+
+.burger-close::before {
+    position: absolute;
+    content: '';
+    border-right: 3px solid #fff;
+    height: 40px;
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.burger-close::after {
+    content: '';
+    position: absolute;
+    border-left: 3px solid #fff;
+    height: 40px;
+    transform: rotate(135deg);
+    top: 0;
+}
+
+.burger-close {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer; 
+}
+
+.burger-open {
+    position: absolute;
+    padding: 0;
+    left: 25px;
+    top: 35px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.bo-1, .bo-2, .bo-3 {
+    width: 36px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.head {
+    max-width: 100%;
+    max-height: 60em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.back-pic {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    top: 38px;
+}
+
+.top-line-nav.active {
+    background-color: #000;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Текст внутри картинки с кнопкой */
+ 
+.head {
+    position: relative;
+}
+.head-slider-container {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    width: 47em;
+}
+
+.head-inf {
+    color: #fff;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.head-inf h1 {
+    font-size: 85px;
+    margin: 0;
+}
+
+.head-inf p {
+    font-size: 17px;
+}
+
+.inner-get-proposal-head {
+    font-size: 17px;
+    padding: 15px 12px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.inner-get-proposal-head:hover {
+    background-color: #540099;
+    color: #fff;
+}
+
+.head-back-mobile {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: none;
+} 
+
+.head-back-mobile {
+    display: none;
+} 
+
+
+@media(max-width: 1120px) {
+    .head-slider-container {
+        width: 37em;
+    }
+    .head-inf h1 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 992px) {
+    .header-logo {
+        width: 9.5em;
+    }
+    .head-inf h1 {
+        font-size: 45px;
+    }
+    .head-slider-container {
+        transform: translate(-50%,-60%);
+    }
+    .back-pic {
+        width: 130%;
+    }
+}
+
+@media (max-width: 816px) {
+    .head-inf .btn {
+        margin-top: 0;
+        padding: 12px;
+    }
+    .head-inf h1 {
+        font-size: 40px;
+    }
+    .head-slider-container {
+        transform: translate(-50%,-56%);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        width: 9em;
+    }
+    .back-pic {
+        display: none;
+    }
+    .head-back-mobile {
+        display: block;
+    }
+    .head-slider-container {
+        transform: translate(-50%,-40%);
+    }
+    .nav {
+        display: none;
+    }
+    .burger-open {
+        display: block;
+    }
+}
+
+@media (max-width: 590px) {
+    .head-back-mobile {
+        height: 25em;
+    }
+    .head-inf h1 {
+        font-size: 34px;
+    }
+    .head-slider-container {
+        width: 23.5em;
+    }
+}
+
+@media (max-width: 390px) {
+    .head-slider-containerl {
+        width: 21.5em;
+    }
+}
